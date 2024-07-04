@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 200;
+            color: var(--tg-theme-text-color);
+            background: var(--tg-theme-bg-color);
+        }
+
+        #main {
+            width: 100%;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin-top: 50px;
+            margin-bottom: 10px;
+        }
+
+        img {
+            width: 70px;
+            height: 30px auto;
+
+        }
+
+        p {
+            width: 350px;
+            margin: 0 auto;
+        }
+
+        button {
+            border: 0;
+            border-radius: 5px;
+            margin-top: 50px;
+            height: 60px;
+            width: 200px;
+            font-size: 20px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 500ms ease;
+            color: var(--tg-theme-button-color);
+            background: var(--tg-theme-button-text-color);
+        }
+
+        button:hover {
+            background: var(--tg-theme-secondary-bg-color);
+        }
+
+        #form {
+            display: none;
+            text-align: center;
+        }
+
+        input {
+            width: 90%;
+            outline: none;
+            margin: 10px 5%;
+            padding: 15px 10px;
+            font-size: 14px;
+            border: 2px solid silver;
+            border-radius: 5px;
+        }
+
+        input:focus {
+            border-color: #db5d5d;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <h1>Онлайн магазин</h1>
+        <img src="rover_1.webp" alt="rover_1">
+        <p>text text text text text text text text text </p>
+        <button id="buy">Купити</button>
+    </div>
+    <form id="form">
+        <input type="text" placeholder="Ім'я" id="user_name">
+        <input type="text" placeholder="Email" id="user_email">
+        <input type="text" placeholder="Номер телефону" id="user_phone">
+        <div id="error"></div>
+        <button id="order">Оформити</button>
+    </form>
+
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script>
+        let tg = window.Telegram.WebApp;
+        let buy = document.getElementById("buy");
+        let order = document.getElementById("order");
+        tg.expand();
+
+        buy.addEventListener("click", () => {
+            document.getElementById("main").style.display = "none";
+            document.getElementById("form").style.display = "block";
+            document.getElementById("user_name").value = tg.initDataUnsafe.user.first_name + " " + tg.initDataUnsafe.user.last_name;
+        });
+
+        order.addEventListener("click", () => {
+            document.getElementById("error").innerText="" ;
+            name = document.getElementById("user_name").value;
+            email =  document.getElementById("user_email").value;
+            phone =  document.getElementById("user_phone").value;
+
+            if(name.length <5 ) {
+               document.getElementById("error").innerText="Помилка в імені";
+               return; 
+            }
+
+            if(email.length <5 ) {
+               document.getElementById("error").innerText="Помилка в email" ;
+               return;
+            }
+
+            if(phone.length <5 ) {
+               document.getElementById("error").innerText="Помилка в номері телефону" ;
+               return;
+            }
+
+            let data={
+                name: name,
+                email: email,
+                phone: phone
+            }
+
+            tg.sendData(JSON.stringify(data))
+           
+            tg.close();
+        });
+    </script>
+
+</body>
+
+</html>

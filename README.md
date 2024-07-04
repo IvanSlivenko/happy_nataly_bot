@@ -1,2 +1,2 @@
-# happy_nataly_bot
-happy_nataly_telegramm_bot
+# telegramm_bot_happy_taa
+telegramm_bot_happy_taa

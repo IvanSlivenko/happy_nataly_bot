@@ -1,0 +1,179 @@
+==================================================================
+
+Запуск бота :
+
+через debuger
+
+запускаємо файл згідно налаштувань з файлу launch.json
+
+=================================================================
+
+
+
+--------------------------------------------------------------part 1
+
+https://youtu.be/ObwoMskHDoA?list=PL0lO_mIqDDFUev1gp9yEwmwcy8SicqKbt
+
+name = Bildexpres
+user_name = BildExpresBot
+TOKEN = 7023058907:AAENFKpa-Zf1wFNS6hIA5rHsTAA8nKMHUdc
+
+
+00 : 00
+
+----------------------------------------------------------end part 1
+
+
+--------------------------------------------------------------part 2
+
+https://youtu.be/-l_CYgBj4IE?list=PL0lO_mIqDDFUev1gp9yEwmwcy8SicqKbt
+
+pip install pyTelegramBotAPI
+
+
+11 : 23
+
+----------------------------------------------------------end part 2
+
+
+
+--------------------------------------------------------------part 3
+
+https://youtu.be/RpiWnPNTeww?list=PL0lO_mIqDDFUev1gp9yEwmwcy8SicqKbt
+
+pip install pyTelegramBotAPI
+
+pip uninstall telebot
+pip install -U pytelegrambotapi
+
+
+22 : 14
+
+----------------------------------------------------------end part 3
+
+
+
+--------------------------------------------------------------part 4
+
+https://youtu.be/f2z4uuDJO3c?list=PL0lO_mIqDDFUev1gp9yEwmwcy8SicqKbt
+
+sqlite3
+
+
+00 : 00
+
+----------------------------------------------------------end part 4
+
+
+
+--------------------------------------------------------------part 5 weather
+
+https://youtu.be/v8Nqa78v2tE?list=PL0lO_mIqDDFUev1gp9yEwmwcy8SicqKbt
+
+https://home.openweathermap.org/api_keys
+
+key = 7d3ff9b16b029632188557e58d1f4fb8
+
+API -> current weather date -> api doc -> Built-in API request by city name
+
+pip install requests
+
+import json
+
+
+00 : 00
+
+----------------------------------------------------------end part 5
+
+
+
+--------------------------------------------------------------part 6 curencyConverter
+
+https://youtu.be/YrDL6EpYNiA?list=PL0lO_mIqDDFUev1gp9yEwmwcy8SicqKbt
+
+pip install CurrencyConverter
+
+pip install pyrrencies
+
+
+15 : 41
+
+----------------------------------------------------------end part 6
+
+
+--------------------------------------------------------------part 7 aiogram
+
+https://youtu.be/BvPaua-oC08?list=PL0lO_mIqDDFUev1gp9yEwmwcy8SicqKbt
+
+pip install aiogram
+
+
+11 : 24
+
+----------------------------------------------------------end part 7
+
+
+
+--------------------------------------------------------------part 8 Webapps
+
+https://youtu.be/y65BZbNB0YA?list=PL0lO_mIqDDFUev1gp9yEwmwcy8SicqKbt
+
+https://core.telegram.org/bots/webapps
+
+https://files.000webhost.com
+@Iv07092006sl
+
+
+
+21 : 39
+
+----------------------------------------------------------end part 8
+
+
+
+--------------------------------------------------------------part 9 Payments
+
+https://youtu.be/PkOEZq2bvVA?list=PL0lO_mIqDDFUev1gp9yEwmwcy8SicqKbt
+
+botFather -> mybots->Payments->Smart Glocal 
+
+
+
+PAYMENT_TOKEN = 1877036958:TEST:0079a5a0d5b0c8c7b45d47443cbc65b67422a907
+
+
+06 : 19
+
+----------------------------------------------------------end part 9
+
+
+
+--------------------------------------------------------------part 10 Deploy to server
+
+https://youtu.be/BouToX9CCUE?list=PL0lO_mIqDDFUev1gp9yEwmwcy8SicqKbt
+
+
+
+hostiq
+
+Завантажити файли сайту ви можете за інструкцією: https://hostiq.ua/wiki/upload-site/#upload-files
+
+Встановити телеграм бота написаному на Python можна за інструкцією: https://hostiq.ua/wiki/ukr/cpanel-django/
+
+https://signup.heroku.com/confirm
+@Iv07092006sl
+
+00 : 00
+
+----------------------------------------------------------end part 10
+
+
+---------------------------------------------------------- part 11
+Деплой на хостинг  pythonanywhere.com
+
+
+https://www.pythonanywhere.com/user/umanproger/
+
+https://youtu.be/INcuG3R5KDw
+
+---------------------------------------------------------- end part 11
